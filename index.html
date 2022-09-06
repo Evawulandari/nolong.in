@@ -1,33 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NolongIn | Beranda</title>
-    <link rel="stylesheet" href="style.css">
+
+    <!-- import fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,400;0,500;0,600;1,100;1,200;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,100;1,300;1,400;1,700&display=swap');
+    </style>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/beranda.css">
+
+    <!-- set tab icon -->
+    <link rel="icon" href="assets/images/logo.png">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="/assets/vendor/fontawesome/css/all.min.css">
 </head>
+
 <body>
-    <div class="jumbotron-container">
-        <div class="jumbotron-left">
-            <nav>
-                <h4 class="logo">LOGO</h5>
-                <ul>
-                    <li><a href="">BERANDA</a></li>
-                    <li><a href="">TENTANG</a></li>
-                    <li><a href="">LAYANAN</a></li>
-                    <li><a href="">KONTAK</a></li>
-                </ul>
-            </nav>
+    <nav>
+        <div class="logo">
+            <a href="index.html">
+                <img src="/assets/images/logo.png" width="70" alt="logo">
+            </a>
         </div>
-    
-        <div class="jumbotron-right">
-            <button class="btn-light btn-register">
-                <span class="text-blue bold">
-                    Join Now ->
-                </span>
-            </button>
+
+        <ul class="nav-menu">
+            <li><a class="active-nav" href="index.html">Beranda</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+            <li><a href="kategori.html">Kategori</a></li>
+            <li><a href="umkm.html">Daftar UMKM</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+
+        <div class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="jumbotron">
+            <div class="jumbotron-left">
+                <div class="jumbotron-body">
+                    <h1 class="jumbotron-text text-dark">
+                        Gak hanya keren, <br>
+                        pakai produk UMKM juga <br>
+                        dapat <span class="text-blue">NOLONGin</span> perekonomian!
+                    </h1>
+
+                    <div class="jumbotron-search">
+                        <form action="#" method="get">
+                            <input type="text" class="jumbotron-input" placeholder="UMKM atau Produk UMKM">
+                            <div class="vertical-line"></div>
+                            <select name="location" class="jumbotron-select" id="location">
+                                <option value="" selected>Lokasi</option>
+                                <option value="aceh">Aceh</option>
+                                <option value="bekasi">Bekasi</option>
+                                <option value="bogor">Bogor</option>
+                                <option value="jakarta">Jakarta</option>
+                            </select>
+                            <button type="submit">Cari UMKM</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="jumbotron-right">
+                <img src="assets/images/undraw_web_shopping.svg" alt="Ilustrasi belanja">
+            </div>
         </div>
     </div>
+
+    <div class="nearest-container">
+        <div class="container">
+            <h2 class="nearest-title text-dark text-center">UMKM <span class="text-blue">Terdekat</span></h2>
+            <div class="horizontal-line"></div>
+
+            <div class="nearest">
+                <div class="nearest-item">
+                    <img src="assets/images/umkm1.jpg" alt="Gambar UMKM">
+                    <div class="nearest-body">
+                        <ul class="category-label">
+                            <li>Sembako</li>
+                            <li>Makanan & Minuman</li>
+                        </ul>
+
+                        <h3 class="nearest-item-title text-dark">Warung Bapak Muhadi</h3>
+                        <p class="nearest-item-text text-muted"><i class="fas fa-map-marker-alt"></i> Karyasari,
+                            Leuwiliang
+                        </p>
+                    </div>
+                </div>
+
+                <div class="nearest-item">
+                    <img src="assets/images/umkm1.jpg" alt="Gambar UMKM">
+                    <div class="nearest-body">
+                        <ul class="category-label">
+                            <li>Sembako</li>
+                            <li>Makanan & Minuman</li>
+                        </ul>
+
+                        <h3 class="nearest-item-title text-dark">Warung Bapak Muhadi</h3>
+                        <p class="nearest-item-text text-muted"><i class="fas fa-map-marker-alt"></i> Karyasari,
+                            Leuwiliang
+                        </p>
+                    </div>
+                </div>
+
+                <div class="nearest-item">
+                    <img src="assets/images/umkm1.jpg" alt="Gambar UMKM">
+                    <div class="nearest-body">
+                        <ul class="category-label">
+                            <li>Sembako</li>
+                            <li>Makanan & Minuman</li>
+                        </ul>
+
+                        <h3 class="nearest-item-title text-dark">Warung Bapak Muhadi</h3>
+                        <p class="nearest-item-text text-muted"><i class="fas fa-map-marker-alt"></i> Karyasari,
+                            Leuwiliang
+                        </p>
+                    </div>
+                </div>
+
+                <div class="nearest-item">
+                    <img src="assets/images/umkm1.jpg" alt="Gambar UMKM">
+                    <div class="nearest-body">
+                        <ul class="category-label">
+                            <li>Sembako</li>
+                            <li>Makanan & Minuman</li>
+                        </ul>
+
+                        <h3 class="nearest-item-title text-dark">Warung Bapak Muhadi</h3>
+                        <p class="nearest-item-text text-muted"><i class="fas fa-map-marker-alt"></i> Karyasari,
+                            Leuwiliang
+                        </p>
+                    </div>
+                </div>
+
+                <div class="nearest-item">
+                    <img src="assets/images/umkm1.jpg" alt="Gambar UMKM">
+                    <div class="nearest-body">
+                        <ul class="category-label">
+                            <li>Sembako</li>
+                            <li>Makanan & Minuman</li>
+                        </ul>
+
+                        <h3 class="nearest-item-title text-dark">Warung Bapak Muhadi</h3>
+                        <p class="nearest-item-text text-muted"><i class="fas fa-map-marker-alt"></i> Karyasari,
+                            Leuwiliang
+                        </p>
+                    </div>
+                </div>
+
+                <div class="nearest-item">
+                    <img src="assets/images/umkm1.jpg" alt="Gambar UMKM">
+                    <div class="nearest-body">
+                        <ul class="category-label">
+                            <li>Sembako</li>
+                            <li>Makanan & Minuman</li>
+                        </ul>
+
+                        <h3 class="nearest-item-title text-dark">Warung Bapak Muhadi</h3>
+                        <p class="nearest-item-text text-muted"><i class="fas fa-map-marker-alt"></i> Karyasari,
+                            Leuwiliang
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright &copy; 2022 <a href="#">Nolong.in</a></p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>

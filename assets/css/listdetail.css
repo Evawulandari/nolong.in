@@ -1,0 +1,77 @@
+nav {
+    background-color: #0076f0;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.list h1 {
+    font-family: 'Overpass', sans-serif;
+    font-size: xx-large;
+    margin-top: 30px;
+}
+
+.list p {
+    font-family: 'Overpass', sans-serif;
+    font-size: large;
+    font-weight: 600;
+}
+
+.card {
+    width: 215px;
+    height: 285px;
+    margin: 10px;
+    padding: 1px;
+    border-radius: 0px;
+    box-shadow: 1px 1px 10px grey;
+}
+
+.card img {
+    width: 213px;
+    height: 150px;
+
+}
+
+.card-text p{
+    text-align: left;
+    font-size: small;
+    font-family:'Overpass', sans-serif ;
+    line-height: 0px;
+}
+
+.card-text {
+    padding: 0px 10px;
+}
+.card-text h3{
+    font-family: 'Overpass', sans-serif;
+    text-align: center;
+    line-height: 0px;
+}
+
+.center { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.center a{
+    text-decoration: none;
+}
+
+.center button{
+    background-color: #0076f0;
+    border: none;
+    width: 50px;
+    height: 25px;
+    color: #fff;
+    box-shadow: 2px 2px 5px grey;   
+    margin: 20px 0px 10px 0px; 
+
+}
+
+.card-ori {
+    display: flex;
+}
+

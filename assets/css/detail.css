@@ -1,0 +1,100 @@
+.container h1 {
+    font-family: 'Overpass', sans-serif;
+    font-size: xx-large;
+    line-height: 0px;
+}
+
+.address {
+    font-family: 'Overpass', sans-serif;
+    font-size: smaller;
+    font-weight: 600;
+    line-break: auto;
+    padding: 7px;
+    
+}
+
+
+.container img {
+    width: 380px;
+    height: 230px;
+    margin: 15px 0px;
+}
+.contact {
+    font-family: 'Overpass', sans-serif;
+    font-size: medium;
+    line-height: 23px;
+    
+}
+
+.container-left {
+    margin: 0px;
+    column-count: 2;
+    
+}
+
+.textheading {
+    font-family: 'Overpass', sans-serif;
+    font-size: large;
+    line-height: 18px;
+}
+
+
+.text-heading p {
+    font-family: 'Overpass', sans-serif;
+    font-size:large;
+    line-height: 18px;
+}
+
+.container {
+    margin-top: 30px;
+    
+}
+
+.container a {
+    text-decoration: none;
+}
+
+h2 {
+    font-family: 'Overpass', sans-serif;
+    padding-top: 100px;
+    line-height: 0px;
+}
+
+.card {
+    width: 150px;
+    height: 170px;
+    margin: 10px;
+    padding: 0px;
+    border-radius:10px;
+    box-shadow: 1px 1px 5px grey;
+    
+}
+.title {
+    text-align: center;
+}
+
+.card img {
+    width: 149px;
+    height: 100px;
+    margin-top: 0px;
+}
+
+.card-ori {
+    display: flex;
+    padding: 5px 10px;
+}
+
+
+.title h3 {
+    font-family: 'Overpass', sans-serif;
+
+}
+
+.text p {
+    font-family: 'Overpass', sans-serif;
+}
+
+nav{
+    background-color: #0076f0;
+
+}

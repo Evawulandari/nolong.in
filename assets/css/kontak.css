@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+}
+
+.contact-left{
+    width: 50%; 
+}
+
+.contact-right{
+    width: 50%;
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+}
