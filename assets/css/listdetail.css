@@ -6,24 +6,32 @@ nav {
     margin-top: 20px;
 }
 
-.list h1 {
+.list h2 {
     font-family: 'Overpass', sans-serif;
-    font-size: xx-large;
     margin-top: 30px;
+    color: #333;
+    text-align: center;
+}
+
+.list h2 span{
+    font-family: 'Overpass', sans-serif;
+    margin-top: 30px;
+    color: #0076f0;
 }
 
 .list p {
     font-family: 'Overpass', sans-serif;
     font-size: large;
     font-weight: 600;
+    color: #333;
 }
 
 .card {
     width: 215px;
-    height: 285px;
+    height: 225px;
     margin: 10px;
     padding: 1px;
-    border-radius: 0px;
+    border-radius: 5px;
     box-shadow: 1px 1px 10px grey;
 }
 
@@ -38,6 +46,7 @@ nav {
     font-size: small;
     font-family:'Overpass', sans-serif ;
     line-height: 0px;
+    color: #333;
 }
 
 .card-text {
@@ -47,6 +56,7 @@ nav {
     font-family: 'Overpass', sans-serif;
     text-align: center;
     line-height: 0px;
+    color: #333;
 }
 
 .center { 
@@ -75,3 +85,6 @@ nav {
     display: flex;
 }
 
+.card a{
+    text-decoration: none;
+}
