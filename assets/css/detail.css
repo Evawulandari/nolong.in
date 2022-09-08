@@ -2,6 +2,11 @@
     font-family: 'Overpass', sans-serif;
     font-size: xx-large;
     line-height: 0px;
+    text-align: left;
+}
+
+.content{
+    display: flex;
 }
 
 .address {
@@ -10,6 +15,7 @@
     font-weight: 600;
     line-break: auto;
     padding: 7px;
+    text-align: left;
     
 }
 
@@ -27,11 +33,10 @@
 
 .container-left {
     margin: 0px;
-    column-count: ;
     
 }
 
-.textheading {
+.text-heading {
     font-family: 'Overpass', sans-serif;
     font-size: large;
     line-height: 18px;
@@ -57,6 +62,7 @@ h2 {
     font-family: 'Overpass', sans-serif;
     margin-top: 50px;
     line-height: 0px;
+    text-align: left;
 }
 
 .card-ori .card {
@@ -76,6 +82,8 @@ h2 {
     width: 150px;
     height: 150px;
     margin-top: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .card-ori {
@@ -106,4 +114,43 @@ nav{
     padding: 1px;
     border-radius: 5px;
     box-shadow: 1px 1px 10px 1px #bbb;
+}
+
+.container-right{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-right .card{
+    width: 400px;
+    height: 200px;
+    box-shadow: 1px 1px 10px 1px #bbb;
+    border-radius: 5px;
+    margin: 10px;
+}
+.container-right h2{
+    text-align: center;
+}
+
+.container-right img{
+    width: 199px;
+    height: 199px;
+    padding-top: 1PX;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.container-right h3{
+    text-align: left;
+    padding-left: 10px;
+}
+
+.container-right p{
+    text-align: left;
+    padding-left: 10px;
+}
+
+.container-right .title{
+    display: flex;
 }
