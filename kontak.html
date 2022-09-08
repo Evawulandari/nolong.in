@@ -20,35 +20,65 @@
 </head>
 
 <body>
-    <nav>
-        <div class="logo">
-            <a href="index.html">
-                <img src="/assets/images/logo.png" width="70px" alt="logo">
-            </a>
-        </div>
-        <ul>
-            <li><a href="index.html">Beranda</a></li>
-            <li><a href="tentang.html">Tentang</a></li>
-            <li><a href="kategori.html">Kategori</a></li>
-            <li><a href="umkm.html">Daftar UMKM</a></li>
-            <li><a href="kontak.html" class="active-nav">Kontak</a></li>
-        </ul>
-    </nav>
+    <div class="nav">
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" width="70" alt="logo">
+                </a>
+            </div>
+
+            <ul class="nav-menu">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="tentang.html">Tentang</a></li>
+                <li><a href="kategori.html">Kategori</a></li>
+                <li><a href="umkm.html">Daftar UMKM</a></li>
+                <li><a class="active-nav" href="kontak.html">Kontak</a></li>
+            </ul>
+
+            <div class="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </div>
 
     <div class="container">
         <div class="contact-left">
-            <h4>Hubungi kami</h4>
-            <form action="#">
-                <div class="input-group">
-                    <label for="subject">Subjek</label>
-                    <input type="text" id="subject">
-                </div>
-            </form>
-        </div>
-        <div class="contact-right">
+            <h2>Contact Us</h2>
+            <h5> Team profesional akan senang hati membantu<br>
+                anda dan para UMKM untuk terus maju dan berkembang
+            </h5>
 
+            <div class="input-group">
+                <label for="subject">Nama</label>
+                <input type="text" id="subject" placeholder="Nama Pengguna">
+                <br>
+                <label for="subject">Email</label>
+                <input type="text" id="subject" placeholder="Alamat Email"><br>
+                <label for="subject">Pesan</label>
+                <textarea>pesan</textarea>
+
+                <div class="button">
+                    <button type="submit">Kirim</button>
+                </div>
+            </div>
         </div>
+
+        <div class="contact-right">
+            <div class="contact-img">
+                <img src="assets/images/kontak.svg" height="300px" width="500px" alt="gambar">
+            </div>
+        </div>
+
     </div>
+
+    <footer>
+        <p>Copyright &copy; 2022 <a href="#">Nolong.in</a></p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
