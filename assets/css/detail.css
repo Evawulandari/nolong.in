@@ -15,9 +15,8 @@
 
 
 .container img {
-    width: 380px;
-    height: 230px;
-    margin: 15px 0px;
+    width: 400px;
+    margin: 0px 0px;
 }
 .contact {
     font-family: 'Overpass', sans-serif;
@@ -28,7 +27,7 @@
 
 .container-left {
     margin: 0px;
-    column-count: 2;
+    column-count: ;
     
 }
 
@@ -56,16 +55,16 @@
 
 h2 {
     font-family: 'Overpass', sans-serif;
-    padding-top: 100px;
+    margin-top: 50px;
     line-height: 0px;
 }
 
-.card {
+.card-ori .card {
     width: 150px;
-    height: 170px;
+    height: 180px;
     margin: 10px;
     padding: 0px;
-    border-radius:10px;
+    border-radius:5px;
     box-shadow: 1px 1px 5px grey;
     
 }
@@ -74,8 +73,8 @@ h2 {
 }
 
 .card img {
-    width: 149px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     margin-top: 0px;
 }
 
@@ -92,9 +91,19 @@ h2 {
 
 .text p {
     font-family: 'Overpass', sans-serif;
+    margin-top: 0;
 }
 
 nav{
     background-color: #0076f0;
 
+}
+
+.card-group.card {
+    width: fit-content;
+    margin: 10px;
+    margin-bottom: 20px;
+    padding: 1px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px 1px #bbb;
 }
