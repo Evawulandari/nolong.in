@@ -6,6 +6,10 @@ body{
     max-height: 300px;
 }
 
+nav{
+    background-color: transparent;
+}
+
 .jumbotron{
     display: flex;
     justify-content: space-between;
@@ -145,16 +149,14 @@ body{
 }
 
 /* Tampilan tablet */
-@media screen and (max-width: 1023px){
-    
+@media screen and (max-width: 768px){
+    .jumbotron-right{
+        display: none;
+    }
 }
 
 /* Tampilan smartphone */
 @media screen and (max-width: 576px){
-    .jumbotron-right{
-        display: none;
-    }
-
     .jumbotron-left{
         width: 100%;
     }

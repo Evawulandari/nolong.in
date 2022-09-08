@@ -1,14 +1,22 @@
+body{
+    background-color: #f6f9fc;
+}
+
 nav {
     background-color: #0076f0;
 }
 
 .container {
+    margin: 0;
     margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 0 60px;
 }
 
 .list h2 {
     font-family: 'Overpass', sans-serif;
     margin-top: 30px;
+    margin-bottom: 5px;
     color: #333;
     text-align: center;
 }
@@ -27,43 +35,72 @@ nav {
 }
 
 .card {
-    width: 215px;
-    height: 225px;
     margin: 10px;
+    margin-bottom: 20px;
     padding: 1px;
     border-radius: 5px;
-    box-shadow: 1px 1px 10px grey;
+    box-shadow: 1px 1px 10px 1px #bbb;
+}
+
+.card:hover {
+    box-shadow: 1px 1px 10px 1px #0076f0;
 }
 
 .card img {
-    width: 213px;
-    height: 150px;
-
+    width: 290px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .card-text p{
     text-align: left;
     font-size: small;
     font-family:'Overpass', sans-serif ;
-    line-height: 0px;
-    color: #333;
+    color: #7a7a7a;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.card-text p i{
+    margin-right: 5px;
 }
 
 .card-text {
-    padding: 0px 10px;
+    padding: 0.5rem 1.3rem;
+    max-width: 285px;
 }
+
 .card-text h3{
     font-family: 'Overpass', sans-serif;
-    text-align: center;
     line-height: 0px;
     color: #333;
+    margin-top: 20px;
+}
+
+.card-text h3:hover{
+    color: rgba(51, 51, 51, 0.795);
+}
+
+.card-text .category{
+    background-color: #0076f031;
+    color: #0076f0;
+    padding: 7px 15px;
+    border-radius: 16px;
+    display: block;
+    margin-bottom: 20px;
+    width: fit-content;
+    font-size: 0.9rem;
+}
+
+.card-text .category:hover{
+    background-color: #0074f0cc;
+    color: #fff;
 }
 
 .center { 
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .center a{
@@ -82,7 +119,10 @@ nav {
 }
 
 .card-ori {
+    margin-top: 30px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .card a{
