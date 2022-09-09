@@ -7,10 +7,23 @@ const umkms = [
         kategori: "aksesoris",
         alamat: "Jln Moch Noh Noer Kp. Sinar Jaya No.Rt 02/01, Purasari, Leuwiliang 16640",
         deskripsi: "Warung Ibu Khodijah adalah sebuah warung makan yang berada di Cibadak, Kabupaten Bandung Barat. Warung ini menyediakan berbagai macam makanan khas Bandung, seperti sate, soto, dan lain-lain. Warung ini juga menyediakan berbagai macam minuman khas Bandung, seperti es teh, es jeruk, dan lain-lain. Warung ini juga menyediakan berbagai macam makanan khas Bandung, seperti sate, soto, dan lain-lain. Warung ini juga menyediakan berbagai macam minuman khas Bandung, seperti es teh, es jeruk, dan lain-lain.",
-        gmaps: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0000000000005!2d107.6561113147693!3d-6.850000000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f0f8f8f8f8f8%3A0x2e69f0f8f8f8f8f8!2sWarung%20Ibu%20Khodijah!5e0!3m2!1sid!2sid!4v1620000000000!5m2!1sid!2sid",
-        wa: 081513784029,
-        fb: "-",
-        ig: "-",
+        wa: 6281513784029,
+        fb: "",
+        ig: "",
+        produk: [
+            {
+                nama: "mobilan",
+                foto: "mainan.jpg",
+            },
+            {
+                nama: "Aksesoris",
+                foto: "aksesoris.jpg",
+            },
+            {
+                nama: "Kecantikan",
+                foto: "kecantikan.jpg",
+            }
+        ],
     }, {
         nama: "Pacha Macha",
         detail: "pachamacha.html",
@@ -18,10 +31,23 @@ const umkms = [
         kategori: "Makanan",
         alamat: "Jln Moch Noh Noer Kp. Kaum, Puraseda, Leuwiliang 16640",
         deskripsi: "Warung Ibu Khodijah adalah sebuah warung makan yang berada di Cibadak, Kabupaten Bandung Barat. Warung ini menyediakan berbagai macam makanan khas Bandung, seperti sate, soto, dan lain-lain. Warung ini juga menyediakan berbagai macam minuman khas Bandung, seperti es teh, es jeruk, dan lain-lain. Warung ini juga menyediakan berbagai macam makanan khas Bandung, seperti sate, soto, dan lain-lain. Warung ini juga menyediakan berbagai macam minuman khas Bandung, seperti es teh, es jeruk, dan lain-lain.",
-        gmaps: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0000000000005!2d107.6561113147693!3d-6.850000000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f0f8f8f8f8f8%3A0x2e69f0f8f8f8f8f8!2sWarung%20Ibu%20Khodijah!5e0!3m2!1sid!2sid!4v1620000000000!5m2!1sid!2sid",
-        wa: 081383430176,
+        wa: 6281383430176,
         fb: "Pacha Macha",
-        ig: "-",
+        ig: "",
+        produk: [
+            {
+                nama: "Mainan Anak",
+                foto: "mainan.jpg",
+            },
+            {
+                nama: "Aksesoris",
+                foto: "aksesoris.jpg",
+            },
+            {
+                nama: "Kecantikan",
+                foto: "kecantikan.jpg",
+            }
+        ],
     }, {
         nama: "Monambih",
         detail: "monambih.html",
@@ -29,10 +55,23 @@ const umkms = [
         kategori: "Makanan",
         alamat: "Jln Moch Noh Noer Kp. Neglasari, Karyasari, Leuwiliang 16640",
         deskripsi: "Warung Ibu Khodijah adalah sebuah warung makan yang berada di Cibadak, Kabupaten Bandung Barat. Warung ini menyediakan berbagai macam makanan khas Bandung, seperti sate, soto, dan lain-lain. Warung ini juga menyediakan berbagai macam minuman khas Bandung, seperti es teh, es jeruk, dan lain-lain. Warung ini juga menyediakan berbagai macam makanan khas Bandung, seperti sate, soto, dan lain-lain. Warung ini juga menyediakan berbagai macam minuman khas Bandung, seperti es teh, es jeruk, dan lain-lain.",
-        gmaps: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0000000000005!2d107.6561113147693!3d-6.850000000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f0f8f8f8f8f8%3A0x2e69f0f8f8f8f8f8!2sWarung%20Ibu%20Khodijah!5e0!3m2!1sid!2sid!4v1620000000000!5m2!1sid!2sid",
-        wa: 085771984178,
+        wa: 6285771984178,
         fb: "Monambih Street Food",
         ig: "monambih",
+        produk: [
+            {
+                nama: "Mainan Anak",
+                foto: "mainan.jpg",
+            },
+            {
+                nama: "Aksesoris",
+                foto: "aksesoris.jpg",
+            },
+            {
+                nama: "Kecantikan",
+                foto: "kecantikan.jpg",
+            }
+        ],
     }, {
         nama: "Dapoer Pelangi",
         detail: "dapurpelangi.html",
@@ -40,10 +79,23 @@ const umkms = [
         kategori: "Makanan",
         alamat: "Jln Moch Noh Noer Kp. Neglasari, Karyasari, Leuwiliang 16640",
         deskripsi: "Warung Ibu Khodijah adalah sebuah warung makan yang berada di Cibadak, Kabupaten Bandung Barat. Warung ini menyediakan berbagai macam makanan khas Bandung, seperti sate, soto, dan lain-lain. Warung ini juga menyediakan berbagai macam minuman khas Bandung, seperti es teh, es jeruk, dan lain-lain. Warung ini juga menyediakan berbagai macam makanan khas Bandung, seperti sate, soto, dan lain-lain. Warung ini juga menyediakan berbagai macam minuman khas Bandung, seperti es teh, es jeruk, dan lain-lain.",
-        gmaps: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0000000000005!2d107.6561113147693!3d-6.850000000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f0f8f8f8f8f8%3A0x2e69f0f8f8f8f8f8!2sWarung%20Ibu%20Khodijah!5e0!3m2!1sid!2sid!4v1620000000000!5m2!1sid!2sid",
-        wa: 081285853904,
+        wa: 6281285853904,
         fb: "Diah R Maulana",
         ig: "dapoerpelangi_diah",
+        produk: [
+            {
+                nama: "Mainan Anak",
+                foto: "mainan.jpg",
+            },
+            {
+                nama: "Aksesoris",
+                foto: "aksesoris.jpg",
+            },
+            {
+                nama: "Kecantikan",
+                foto: "kecantikan.jpg",
+            }
+        ],
     }
 
 ];
