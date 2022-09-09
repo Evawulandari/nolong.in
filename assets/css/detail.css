@@ -66,8 +66,8 @@ h2 {
 }
 
 .card-ori .card {
-    width: 150px;
-    height: 180px;
+    width: 120px;
+    height: 150px;
     margin: 10px;
     padding: 0px;
     border-radius:5px;
@@ -79,8 +79,8 @@ h2 {
 }
 
 .card img {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 110px;
     margin-top: 0px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
