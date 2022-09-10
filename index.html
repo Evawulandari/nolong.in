@@ -35,6 +35,7 @@
             <li><a href="tentang.html">Tentang</a></li>
             <li><a href="kategori.html">Kategori</a></li>
             <li><a href="umkm.html">Daftar UMKM</a></li>
+            <li><a href="Blog.html">Blog</a></li>
             <li><a href="kontak.html">Kontak</a></li>
         </ul>
 
@@ -83,97 +84,7 @@
             <h2 class="nearest-title text-dark text-center">UMKM <span class="text-blue">Terdekat</span></h2>
             <div class="horizontal-line"></div>
 
-            <div class="nearest">
-                <div class="nearest-item">
-                    <img src="assets/images/umkm1.jpg" alt="Gambar UMKM">
-                    <div class="nearest-body">
-                        <ul class="category-label">
-                            <li>Sembako</li>
-                            <li>Makanan & Minuman</li>
-                        </ul>
-
-                        <h3 class="nearest-item-title text-dark">Warung Bapak Muhadi</h3>
-                        <p class="nearest-item-text text-muted"><i class="fas fa-map-marker-alt"></i> Karyasari,
-                            Leuwiliang
-                        </p>
-                    </div>
-                </div>
-
-                <div class="nearest-item">
-                    <img src="assets/images/umkm1.jpg" alt="Gambar UMKM">
-                    <div class="nearest-body">
-                        <ul class="category-label">
-                            <li>Sembako</li>
-                            <li>Makanan & Minuman</li>
-                        </ul>
-
-                        <h3 class="nearest-item-title text-dark">Warung Bapak Muhadi</h3>
-                        <p class="nearest-item-text text-muted"><i class="fas fa-map-marker-alt"></i> Karyasari,
-                            Leuwiliang
-                        </p>
-                    </div>
-                </div>
-
-                <div class="nearest-item">
-                    <img src="assets/images/umkm1.jpg" alt="Gambar UMKM">
-                    <div class="nearest-body">
-                        <ul class="category-label">
-                            <li>Sembako</li>
-                            <li>Makanan & Minuman</li>
-                        </ul>
-
-                        <h3 class="nearest-item-title text-dark">Warung Bapak Muhadi</h3>
-                        <p class="nearest-item-text text-muted"><i class="fas fa-map-marker-alt"></i> Karyasari,
-                            Leuwiliang
-                        </p>
-                    </div>
-                </div>
-
-                <div class="nearest-item">
-                    <img src="assets/images/umkm1.jpg" alt="Gambar UMKM">
-                    <div class="nearest-body">
-                        <ul class="category-label">
-                            <li>Sembako</li>
-                            <li>Makanan & Minuman</li>
-                        </ul>
-
-                        <h3 class="nearest-item-title text-dark">Warung Bapak Muhadi</h3>
-                        <p class="nearest-item-text text-muted"><i class="fas fa-map-marker-alt"></i> Karyasari,
-                            Leuwiliang
-                        </p>
-                    </div>
-                </div>
-
-                <div class="nearest-item">
-                    <img src="assets/images/umkm1.jpg" alt="Gambar UMKM">
-                    <div class="nearest-body">
-                        <ul class="category-label">
-                            <li>Sembako</li>
-                            <li>Makanan & Minuman</li>
-                        </ul>
-
-                        <h3 class="nearest-item-title text-dark">Warung Bapak Muhadi</h3>
-                        <p class="nearest-item-text text-muted"><i class="fas fa-map-marker-alt"></i> Karyasari,
-                            Leuwiliang
-                        </p>
-                    </div>
-                </div>
-
-                <div class="nearest-item">
-                    <img src="assets/images/umkm1.jpg" alt="Gambar UMKM">
-                    <div class="nearest-body">
-                        <ul class="category-label">
-                            <li>Sembako</li>
-                            <li>Makanan & Minuman</li>
-                        </ul>
-
-                        <h3 class="nearest-item-title text-dark">Warung Bapak Muhadi</h3>
-                        <p class="nearest-item-text text-muted"><i class="fas fa-map-marker-alt"></i> Karyasari,
-                            Leuwiliang
-                        </p>
-                    </div>
-                </div>
-            </div>
+            <div class="nearest"></div>
         </div>
     </div>
 
@@ -182,6 +93,29 @@
     </footer>
 
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/umkm.js"></script>
+    <script>
+        const nearest = document.querySelector('.nearest');
+        const data_umkm = getUmkmWithOut('', 6);
+
+        data_umkm.forEach((item) => {
+            nearest.innerHTML += `
+                <div class="nearest-item">
+                    <a href="${item.detail}"><img src="assets/images/${item.foto}" alt="Gambar UMKM"></a>
+                    <div class="nearest-body">
+                        <ul class="category-label">
+                            <li><a href="${item.detail}">${item.kategori}</a></li>
+                        </ul>
+
+                        <h3 class="nearest-item-title text-dark"><a href="">${item.nama}</a></h3>
+                        <p class="nearest-item-text text-muted"><i class="fas fa-map-marker-alt"></i> Karyasari,
+                            Leuwiliang
+                        </p>
+                    </div>
+                </div>
+            `;
+        });
+    </script>
 </body>
 
 </html>

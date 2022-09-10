@@ -1,195 +1,108 @@
-*{
-    font-family: 'Overpass', sans-serif;
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-}
-
-.text-blue{
-    color: #0076f0;
-}
-
-.text-dark{
-    color: #3c3c3c;
-}
-
-.text-muted{
-    color: #969ea6;
-}
-
-.text-white{
-    color: #fff;
-}
-
-.text-yellow{
-    color: #ffc107;
-}
-
-.text-center{
-    text-align: center;
-}
-
-.bg-blue{
-    background-color: #0099ff;
-}
-
-.bg-white{
-    background-color: #fff;
-}
-
-.bg-aqua{
-    background-color: #C1E7EC;
-}
- 
-/* Navbar */
-nav{
-    padding: 0.7rem 3rem;
-    background-color: 0099ff;
+.blog{
+    padding: 50px;
     display: flex;
-    justify-content: space-between;
-    background-color: #0076f0;
+    flex-direction: column;
+    align-items: center;
 }
 
-.nav-menu{
+.card {
+    margin-bottom: 10px;
     display: flex;
-    width: 50%;
-    justify-content: space-between;
-}
-
-.nav-menu li{
-    display: flex;
-    list-style: none;
-}
-
-.nav-menu li a{
-    text-decoration: none;
-    font-size: 0.9rem;
-    color: #eee;
-    font-weight: 500;
-    padding: 5px 10px;
-}
-
-.nav-menu li a:hover{
-    background-color: #ffffff44;
-    padding: 5px 10px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 5px #eee;
     border-radius: 5px;
+    width: 850px;
+    height: 252px;
+}
+
+.img img{
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.img img:hover{
+    opacity: 0.8;
+}
+
+.card-body {
+    padding: 0px 20px;
+}
+
+.title{
+    text-decoration: none;
+}
+
+.title h4{
+    font-size: 22px;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #3a3a3a;
+}
+
+.title h4:hover{
+    color: #3a3a3abe;
+    transition: 0.1s;
+}
+
+.date{
+    font-size: 15px;
+    color: #555;
+}
+
+.des{
+    font-size: 15px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.card-body .btn button a {
+    text-decoration: none;
+    color: #555;
+}
+
+.card-body .btn button:hover {
+    background-color: #0076fa;
     transition: 0.3s;
 }
 
-/* Hamburger menu */
-.menu-toggle{
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 20px;
-    width: 30px;
-    cursor: pointer;
+.card-body .btn button:hover a {
+    color: #fff;
+    transition: 0.3s;
 }
 
-.bar{
-    display: block;
-    width: 100%;
-    height: 3px;
+.card-body .btn button {
     background-color: #fff;
+    font-weight: 600;;
     border-radius: 5px;
+    padding: 10px 14px;
+    font-size: 15px;
+    cursor: pointer;
+    border: 1px solid #aaa;
 }
 
-.active-nav{
-    background-color: #ffffff22;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
-.horizontal-line{
-    border: 1px solid #0076f0;
-    width: 5rem;
-    display: block;
-    margin: 0 auto 20px auto;
-}
-
-.container{
-    margin: 5rem 5vw;
-}
-
-.border{
-    border: 1px solid #888;
-}
-
-footer{
-    background-color: #0076f0;
-    padding: 1rem 3rem;
-    color: #fff;
-    text-align: center;
-}
-
-footer p a{
+a{
     text-decoration: none;
-    font-weight: 600;
-    color: #fff;
 }
 
-/* Tampilan tablet */
-@media screen and (max-width: 768px){
-    html{
-        font-size: 14px;
-    }
-
-    nav{
-        align-items: center;
-    }
-    
-    .nav-menu{
-        visibility: hidden;
-        position: absolute;
-        left: 0;
-        top: 65px;
+@media screen and (max-width: 900px) {
+    .card {
+        width: 100%;
+        height: 100%;
         flex-direction: column;
-        background-color: #1988ff;
+    }
+    .img img{
         width: 100%;
-        text-align: center;
-        padding: 0;
-        align-items: center;
+        height: 250px;
+        border-radius: 0;
     }
-    
-    .nav-menu li{
-        margin: 10px 0;
+    .card-body {
+        padding: 0px 20px;
     }
 
-    .nav-menu li a{
-        font-size: 14px;
-    }
-
-    .nav-menu.active{
-        visibility: visible;
-    }
-    
-    .menu-toggle{
-        display: flex;
-    }
-
-    .menu-toggle.active .bar:nth-child(2){
-        opacity: 0;
-    }
-
-    .menu-toggle.active .bar:nth-child(1){
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .menu-toggle.active .bar:nth-child(3){
-        transform: translateY(-8px) rotate(-45deg);
-    }
-}
-
-/* Tampilan smartphone */
-@media screen and (max-width: 576px){
-    html{
-        font-size: 12px;
-    }
-
-    .container{
-        width: 100%;
+    .card-body .btn button {
+        margin: 10px;
     }
 }

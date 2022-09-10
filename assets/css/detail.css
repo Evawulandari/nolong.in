@@ -1,57 +1,92 @@
-.container h1 {
-    font-family: 'Overpass', sans-serif;
-    font-size: xx-large;
-    line-height: 0px;
-    text-align: left;
-}
-
 .content{
     display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
-
-.address {
-    font-family: 'Overpass', sans-serif;
-    font-size: smaller;
-    font-weight: 600;
-    line-break: auto;
-    padding: 7px;
-    text-align: left;
-    
-}
-
 
 .container img {
-    width: 400px;
+    width: 320px;
     margin: 0px 0px;
+    border-radius: 5px;
 }
+
+.detail-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.primary-info{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.primary-info h1{
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 0px;
+    margin-top: 20px;
+    color: #444;
+    text-align: center;
+}
+
+.primary-info .address {
+    text-align: center;
+    color: #5a5a5a;
+    margin: 0 0 15px 0;
+    font-size: 15px;
+}
+
+.primary-info .desc{
+    text-align: justify;
+    color: #5a5a5a;
+    margin: 0 0 10px 0;
+    text-indent: 30px;
+}
+
 .contact {
-    font-family: 'Overpass', sans-serif;
-    font-size: medium;
-    line-height: 23px;
-    
+    font-size: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 0 30px 0;
+}
+
+.wa{
+    color: #00ca00;
+}
+
+.fb{
+    color: #0076f0;
+}
+
+.ig{
+    color: #D96464;
+}
+
+.wa:hover, .fb:hover, .ig:hover{
+    color: #7a7a7a;
 }
 
 .container-left {
-    margin: 0px;
-    
+    margin-top: 30px;
+    width: 60%;
 }
 
-.text-heading {
-    font-family: 'Overpass', sans-serif;
-    font-size: large;
+.text-heading h2{
+    font-size: 25px;
     line-height: 18px;
+    color: #333;
+    text-align: center;
 }
-
 
 .text-heading p {
-    font-family: 'Overpass', sans-serif;
     font-size:large;
     line-height: 18px;
 }
 
 .container {
     margin-top: 30px;
-    
 }
 
 .container a {
@@ -59,84 +94,75 @@
 }
 
 h2 {
-    font-family: 'Overpass', sans-serif;
     margin-top: 50px;
     line-height: 0px;
     text-align: left;
 }
 
-.card-ori .card {
-    width: 120px;
-    height: 150px;
+.card-parent .card {
+    width: 150px;
     margin: 10px;
-    padding: 0px;
     border-radius:5px;
-    box-shadow: 1px 1px 5px grey;
-    
+    box-shadow: 1px 1px 5px #ccc;
 }
+
 .title {
     text-align: center;
 }
 
 .card img {
-    width: 120px;
+    width: 148px;
     height: 110px;
     margin-top: 0px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    display: block;
+    margin: 0 auto;
 }
 
-.card-ori {
+.card-parent {
     display: flex;
     padding: 5px 10px;
-}
-
-
-.title h3 {
-    font-family: 'Overpass', sans-serif;
-
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .text p {
-    font-family: 'Overpass', sans-serif;
-    margin-top: 0;
+    color: #333;
 }
 
 nav{
     background-color: #0076f0;
-
-}
-
-.card-group.card {
-    width: fit-content;
-    margin: 10px;
-    margin-bottom: 20px;
-    padding: 1px;
-    border-radius: 5px;
-    box-shadow: 1px 1px 10px 1px #bbb;
 }
 
 .container-right{
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-around;
+    margin-top: 30px;
+    padding: 0 30px;
 }
 
 .container-right .card{
-    width: 400px;
-    height: 200px;
-    box-shadow: 1px 1px 10px 1px #bbb;
+    height: 100%;
+    box-shadow: 1px 1px 5px 1px #ccc;
     border-radius: 5px;
-    margin: 10px;
+    margin: 20px 10px;
+    width: 350px;
 }
+
+.card:hover{
+    box-shadow: 1px 1px 5px #0076f0;
+}
+
 .container-right h2{
     text-align: center;
+    margin-bottom: 30px;
+    color: #333;
 }
 
 .container-right img{
-    width: 199px;
-    height: 199px;
-    padding-top: 1PX;
+    width: 150px;
+    height: 150px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
@@ -146,6 +172,10 @@ nav{
     padding-left: 10px;
 }
 
+.container-right h3:hover{
+    color: #0076f0;
+}
+
 .container-right p{
     text-align: left;
     padding-left: 10px;
@@ -153,4 +183,52 @@ nav{
 
 .container-right .title{
     display: flex;
+}
+
+.title .card-text a{
+    text-decoration: none;
+    color: #3a3a3a;
+}
+
+.card-desc{
+    font-size: 15px;
+    color: #5a5a5a;
+    padding: 0 10px;
+}
+
+.card-desc a:hover{
+    color: #0076f0;
+}
+
+/* tampilan tablet */
+@media screen and (max-width: 768px){
+    .container{
+        margin: 0;
+    }
+
+    content{
+        flex-wrap: wrap;
+    }
+
+    .card-group .card{
+        display: block;
+        margin: 15px auto;
+        width: 300px;
+    }
+
+    .card-desc{
+        font-size: 12px;
+    }
+
+    .container-left{
+        width: 100%;
+    }
+
+    .container-right{
+        width: 100%;
+    }
+
+    .detail-top{
+        width: 100%;
+    }
 }

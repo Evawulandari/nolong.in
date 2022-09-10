@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NolongIn | Detail</title>
+    <title>NolongIn | Detail UMKM</title>
 
     <!-- import fonts -->
     <style>
@@ -14,24 +14,28 @@
 
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/detail.css">
-    <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
 
+    <!-- set tab icon -->
+    <link rel="icon" href="assets/images/logo.png">
 
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="/assets/vendor/fontawesome/css/all.min.css">
 </head>
 
 <body>
     <nav>
         <div class="logo">
             <a href="index.html">
-                <img src="/assets/images/logo.png" width="70" alt="logo">
+                <img src="assets/images/logo.png" width="70" alt="logo">
             </a>
         </div>
 
         <ul class="nav-menu">
-            <li><a class="active-nav" href="index.html">Beranda</a></li>
+            <li><a href="index.html">Beranda</a></li>
             <li><a href="tentang.html">Tentang</a></li>
             <li><a href="kategori.html">Kategori</a></li>
             <li><a href="umkm.html">Daftar UMKM</a></li>
+            <li><a href="Blog.html">Blog</a></li>
             <li><a href="kontak.html">Kontak</a></li>
         </ul>
 
@@ -42,105 +46,65 @@
         </div>
     </nav>
 
-<div class="content">
-    <div class="container-left">
-        <div class="container">
-            <h1>Dapoer Pelangi</h1>
-                <p class="address"> kp.Pasar Paro Rt/Rw 01/02 desa.Karacak</p>
-                    <img src="assets/images/dapurpelangi.jpg" alt="">
-                        <p class="contact">
-                            <i class="fa-brands fa-whatsapp"></i><a href="https://wa.me/+62881024938852"> 0881024938852</a>
-                            <br>
-                            <i class="fa-brands fa-facebook-f"></i> WarungIbuKhodijah
-                            <br>
-                            <i class="fa-brands fa-instagram"></i> @warung_ibukhodijah
-                            <br>
-                            Shopee : khodijahstore
-                        </p>
+    <div class="content">
+        <div class="container-left">
+            <div class="container">
+                <div class="detail-top">
+                    <img id="foto_umkm" src="" alt="Foto umkm">
 
-            <div class="text-heading">
-                <h2> Produk </h2>
-                    <p> warung ibu aisyah selalu menyediakan berbagai macam makan ringan dan minuman.
-                        <br>
-                        mulailah belanja dari yang terdekat.
-                    </p>
+                    <div class="primary-info">
+                        <h1 id="nama_umkm"></h1>
+                        <p id="address" class="address"><i class="fas fa-location-dot"></i> Kp.Gudang Rt/Rw 01/02
+                            desa.Puraseda</p>
+
+                        <div class="contact">
+                            <!-- WhatsApp -->
+                            <a href="" class="wa" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+
+                            <!-- Facebook -->
+                            <a href="" class="fb" target="_blank">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+
+                            <!-- Instagram -->
+                            <a href="" class="ig" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+
+                        <p class="desc"></p>
+                    </div>
+                </div>
+
+                <div class="text-heading">
+                    <h2> Produk </h2>
+                </div>
+
+                <div class="card-parent" id="umkm_produk"></div>
             </div>
+        </div>
 
-            <div class="card-ori">
-                <div class="card">
-                    <div class="title">
-                        <img src="assets/images/jajanan.jpg" alt="">
-                            <div class="text">
-                                <p>makanan ringan</p>
-                            </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="title">
-                        <img src="assets/images/minuman.jpg" alt="">
-                            <div class="text">
-                                <p> varian minuman</p>
-                            </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="title">
-                        <img src="assets/images/obat.jpg" alt="">
-                            <div class="text">
-                                <p>obat-obatan</p>
-                            </div>
-                    </div>
-                </div>
-            </div>
+        <div class="container-right">
+            <h2> UMKM <span class="text-blue">Lainnya</span> </h2>
+            <div id="umkm_lainnya" class="card-group"></div>
         </div>
     </div>
 
-    <div class="container-right">
-        <div class="card-group">
-            <h2> UMKM Lainnya </h2>
-                <div class="card">
-                    <div class="title">
-                        <a href="tokowarna.html"><img src="assets/images/toko warna1.jpg" alt=""></a>
-                            <div class="card-text">
-                                <a href="tokowarna.html"> <h3>Toko Warna</h3></a>
-                                    <p><i class="fa-solid fa-location-dot"></i>Jln Moch Noh Noer Kp. Kaum, Puraseda, Leuwiliang 16640</p>
-                                        <div class="center"></div>
-                            </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="title">
-                        <a href="pachamacha.html"><img src="assets/images/pacha1.jpg" alt=""></a>
-                            <div class="card-text">
-                                <a href="monambih.html"> <h3>Pacha Macha</h3></a>
-                                    <p><i class="fa-solid fa-location-dot"></i>Jln Moch Noh Noer Kp. Neglasari, Karyasari, Leuwiliang 16640</p>
-                                        <div class="center"></div>
-                            </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="title">
-                        <a href="monambih.html"><img src="assets/images/monambih.jpg" alt=""></a>
-                            <div class="card-text">
-                                <a href="monambih.html"> <h3>Monambih</h3></a>
-                                    <p><i class="fa-solid fa-location-dot"></i>Jln Moch Noh Noer Kp. Neglasari, Karyasari, Leuwiliang 16640</p>
-                                        <div class="center"></div>
-                            </div>
-                    </div>
-                </div>
-
-        </div>
-    </div>
-</div>
     <footer>
         <p>Copyright &copy; 2022 <a href="#">Nolong.in</a></p>
     </footer>
 
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/umkm.js"></script>
+
+    <script>
+        // import data umkm
+        const data = getUmkm('dapurpelangi.html');
+    </script>
+
+    <script src="assets/js/detail.js"></script>
 </body>
 
 </html>

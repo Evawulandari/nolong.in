@@ -48,6 +48,8 @@ nav {
 
 .card img {
     width: 250px;
+    height: 150px;
+    object-fit: cover;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
