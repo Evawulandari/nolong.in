@@ -94,19 +94,30 @@ nav{
   padding: 0.5rem 5rem;
 }
 
+.result-container {
+  background: #f1f1ff;
+  padding: 0.5rem 5rem;
+  display: none;
+}
+
 .nearest-container .container {
   margin-bottom: 3rem;
   margin-top: 3rem;
 }
 
-.nearest {
+.result-container .container {
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+
+.nearest, .result {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   padding-bottom: 5rem;
 }
 
-.nearest-item {
+.nearest-item, .result-item {
   width: 30%;
   margin: 1rem 0;
   box-shadow: 1px 1px 7px 1px #ddd;
@@ -122,7 +133,14 @@ nav{
   border-radius: 4px;
 }
 
-.nearest-body {
+.result-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.nearest-body, .result-body {
   padding: 0 1rem 0.9rem 1rem;
 }
 
@@ -131,7 +149,17 @@ nav{
   margin: 0.5rem 0;
 }
 
+.result-item h3 {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
 .nearest-item p {
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+
+.result-item p {
   font-size: 0.9rem;
   margin: 0.5rem 0;
 }
@@ -153,6 +181,10 @@ nav{
 }
 
 .nearest-title {
+  margin-bottom: 0.5rem;
+}
+
+.result-title {
   margin-bottom: 0.5rem;
 }
 
@@ -181,11 +213,11 @@ nav{
     text-align: center;
   }
 
-  .nearest {
+  .nearest, .result {
     flex-direction: column;
   }
 
-  .nearest-item {
+  .nearest-item, .result-item {
     width: 100%;
     margin: 1rem 0;
     box-shadow: 1px 1px 7px 1px #ddd;
@@ -227,6 +259,40 @@ nav{
     margin: 0.5rem 0;
 }
 
+/*  */
+
+.result-item:hover{
+  box-shadow: 1px 1px 7px 1px #0076f0;
+}
+
+.result-item img{
+  width: 100%;
+  border-radius: 4px;
+}
+
+.nearest-body{
+  padding: 0 1rem 0.9rem 1rem;
+}
+
+.result-item h3{
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.result-item h3 a{
+  text-decoration: none;
+  color: #3a3a3a;
+}
+
+.result-item h3 a:hover{
+  color: #0076f0;
+}
+
+.result-item p{
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+
 .category-label{
     display: flex;
     flex-wrap: wrap;
@@ -256,7 +322,7 @@ nav{
     color: #fff;
 }
 
-.nearest-title{
+.nearest-title, .result-title{
     margin-bottom: 0.5rem;
 }
 
@@ -282,11 +348,11 @@ nav{
         text-align: center;
     }
 
-    .nearest{
+    .nearest, .result{
         flex-direction: column;
     }
 
-    .nearest-item{
+    .nearest-item, .result-item{
         width: 100%;
         margin: 1rem 0;
         box-shadow: 1px 1px 7px 1px #ddd;

@@ -57,8 +57,9 @@
                     </h1>
 
                     <div class="jumbotron-search">
-                        <form action="#" method="get">
-                            <input type="text" class="jumbotron-input" placeholder="UMKM atau Produk UMKM">
+                        <form action="#" id="search_umkm" method="get">
+                            <input id="input_umkm" type="text" class="jumbotron-input"
+                                placeholder="UMKM atau Produk UMKM">
                             <div class="vertical-line"></div>
                             <select name="location" class="jumbotron-select" id="location">
                                 <option value="" selected>Lokasi</option>
@@ -76,6 +77,15 @@
             <div class="jumbotron-right">
                 <img src="assets/images/undraw_web_shopping.svg" alt="Ilustrasi belanja">
             </div>
+        </div>
+    </div>
+
+    <div class="result-container">
+        <div class="container">
+            <h2 class="result-title text-dark text-center"></h2>
+            <div class="horizontal-line"></div>
+
+            <div class="result"></div>
         </div>
     </div>
 
@@ -114,6 +124,53 @@
                     </div>
                 </div>
             `;
+        });
+
+        const resultContainer = document.querySelector('.result-container');
+        const result = document.querySelector('.result');
+        const result_title = document.querySelector('.result-title');
+        const search_umkm = document.querySelector('#search_umkm');
+        const input_umkm = document.querySelector('#input_umkm');
+
+        search_umkm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const keyword = input_umkm.value;
+            result.innerHTML = '';
+
+            if (keyword != '') {
+                resultContainer.style.display = 'block';
+                result_title.innerHTML = `Hasil Pencarian <span class="text-blue">"${keyword}"</span>`;
+
+                let result_umkm = data_umkm.filter((item) => {
+                    return item.nama.toLowerCase().includes(keyword.toLowerCase());
+                });
+
+                if (result_umkm.length > 0) {
+                    result_umkm.forEach((item) => {
+                        result.innerHTML += `
+                            <div class="result-item">
+                                <a href="${item.detail}"><img src="assets/images/${item.foto}" alt="Gambar UMKM"></a>
+                                <div class="result-body">
+                                    <ul class="category-label">
+                                        <li><a href="${item.detail}">${item.kategori}</a></li>
+                                    </ul>
+
+                                    <h3 class="result-item-title text-dark"><a href="">${item.nama}</a></h3>
+                                    <p class="result-item-text text-muted"><i class="fas fa-map-marker-alt"></i> Karyasari,
+                                        Leuwiliang
+                                    </p>
+                                </div>
+                            </div>
+                        `;
+                    });
+                } else {
+                    result.innerHTML = `
+                        <div>
+                            <h3 class="result-item-title text-dark">UMKM tidak ditemukan</h3>
+                        </div>
+                    `;
+                }
+            }
         });
     </script>
 </body>
